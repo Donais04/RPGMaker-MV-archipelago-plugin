@@ -1,0 +1,1 @@
+# RPGMaker-MV-archipelago-plugin
