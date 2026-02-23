@@ -13,7 +13,7 @@ If things are breaking, try updating your Node.js inside of RPGMaker: https://it
 
 ## specific setup
 
-
+For this section, you'll have to modify MVArchipelago.js directly.
 ### connection
 For setting up players to be able to input the archipelago link and name, use NameInputProcess then set the variables defined in URLVarID, codeVarID, and slotVarID to the names
 
@@ -34,11 +34,7 @@ I also have check 3000 specifically as a randomItemGet. This is for all my junk 
 If you want an event as a check, just set it to autorun on a switch, and have the switch be a check. And if you want an enemy trap as a check... idk. Make it an event and see above?
 
 ### display in game
-set up your item get event to display the name in stored in variable itemListVarID.
-have it autorun when runItemGetSwitchID is on
-Have it play once for each item in itemListVarID, .shift()-ing it after
-then have it flip off runItemGetSwitchID once itemListVarID() has run out
-same for item send
+set up your item get event to display the name in stored in variable itemListVarID. Have it autorun when runItemGetSwitchID is on. Have it play once for each item in itemListVarID, .shift()-ing it after, then have it flip off runItemGetSwitchID once itemListVarID() has run out. Same for item sending.
 
 ### get a check
 to gain an item in game, simply run gain('item name');
