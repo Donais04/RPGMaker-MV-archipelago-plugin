@@ -37,7 +37,7 @@ If you want an event as a check, just set it to autorun on a switch, and have th
 set up your item get event to display the name in stored in variable itemListVarID. Have it autorun when runItemGetSwitchID is on. Have it play once for each item in itemListVarID, .shift()-ing it after, then have it flip off runItemGetSwitchID once itemListVarID() has run out. Same for item sending.
 
 ### get a check
-to gain an item in game, simply run gain('item name');
+to gain an check in game, simply run gain('location check name');
 
 ### in game initialization
 when initializing, first run Rando.openApClient(). Then you'll need to wait a moment for the server to connect. I wait 5 seconds but you can probably get away with less. Then run the following in game:
