@@ -46,6 +46,11 @@ to gain an item in game, simply run gain('item name');
 ### in game initialization
 when initializing, first run Rando.openApClient(). Then you'll need to wait a moment for the server to connect. I wait 5 seconds but you can probably get away with less. Then run the following in game:
 ```javascript
-client.scout(client.room.allLocations).then((result) => {$gamePlayer.locationsRaw = Object.assign(result);});
+client.scout(client.room.allLocations).then((result) => {
+  $gamePlayer.locationsRaw = Object.assign(result);
+});
+```
 wait 120 frames
-Rando.initializeLocationScout();```
+```javascript
+Rando.initializeLocationScout();
+```
